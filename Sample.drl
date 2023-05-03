@@ -4,7 +4,7 @@ import com.example.drools.model.Order;
 
 rule "HDFC"
 	when
-		orderObject : Order(cardType == "HDFC" && price > 	11000);
+		orderObject : Order(cardType == "HDFC" && price > 	10000);
 	then
 		orderObject.setDiscount(10);
 		orderObject.setMonto(orderObject.getPrice()-orderObject.getPrice()*orderObject.getDiscount()/100);
