@@ -4,7 +4,7 @@ import com.example.drools.Factura
  
 rule "Descuento"
 when
-    factura: Factura(monto > 1000)
+    factura: Factura(monto > 2000)
 then
     factura.setDescuento(factura.getMonto() * 0.1);
 end
