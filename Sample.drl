@@ -1,4 +1,3 @@
-package KieRule;
 
 import com.example.drools.model.Order;
 
