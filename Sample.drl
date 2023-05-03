@@ -1,3 +1,4 @@
+package com.example.drools;
 
 import com.example.drools.model.Order;
 
