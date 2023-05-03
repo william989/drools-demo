@@ -7,7 +7,7 @@ rule "HDFC"
 		orderObject : Order(cardType == "HDFC" && price > 	10000);
 	then
 		orderObject.setDiscount(10);
-		orderObject.setMonto(orderObject.getPrice()-orderObject.getPrice()*orderObject.getDiscount());
+		orderObject.setMonto(orderObject.getPrice()-orderObject.getPrice()*orderObject.getDiscount()/100);
 end
 
 rule "ICICI"
