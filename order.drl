@@ -1,0 +1,7317 @@
+package rules
+import pe.gob.contraloria.sisco.models.Order;
+import pe.gob.contraloria.sisco.models.UserRepository;
+
+rule "rule001"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.01);
+end
+
+rule "rule002"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.02);
+end
+
+rule "rule003"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.03);
+end
+
+rule "rule004"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.04);
+end
+
+rule "rule005"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.05);
+end
+
+rule "rule006"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.06);
+end
+
+rule "rule007"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.07);
+end
+
+rule "rule008"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.08);
+end
+
+rule "rule009"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.09);
+end
+
+
+rule "rule010"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.10);
+end
+
+rule "rule011"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.11);
+end
+
+rule "rule012"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.12);
+end
+
+rule "rule013"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.13);
+end
+
+rule "rule014"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.14);
+end
+
+rule "rule015"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.15);
+end
+
+rule "rule016"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.16);
+end
+
+rule "rule017"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.17);
+end
+
+rule "rule018"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.18);
+end
+
+rule "rule019"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.19);
+end
+
+
+rule "rule020"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule021"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.21);
+end
+
+rule "rule022"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.22);
+end
+
+rule "rule023"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.23);
+end
+
+rule "rule024"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*02.4);
+end
+
+rule "rule025"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.25);
+end
+
+rule "rule026"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.26);
+end
+
+rule "rule027"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.27);
+end
+
+rule "rule028"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.28);
+end
+
+rule "rule029"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.29);
+end
+
+
+rule "rule030"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.30);
+end
+
+rule "rule031"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.31);
+end
+
+rule "rule032"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.32);
+end
+
+rule "rule033"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.33);
+end
+
+rule "rule034"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.34);
+end
+
+rule "rule035"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.35);
+end
+
+rule "rule036"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.36);
+end
+
+rule "rule037"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.37);
+end
+
+rule "rule038"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.38);
+end
+
+rule "rule039"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.39);
+end
+
+
+rule "rule040"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.40);
+end
+
+
+rule "rule041"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.41);
+end
+
+rule "rule042"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.42);
+end
+
+rule "rule043"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.43);
+end
+
+rule "rule044"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.44);
+end
+
+rule "rule045"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.45);
+end
+
+rule "rule046"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.46);
+end
+
+rule "rule047"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.47);
+end
+
+rule "rule048"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.48);
+end
+
+rule "rule049"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.49);
+end
+
+
+rule "rule050"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.50);
+end
+
+rule "rule051"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.51);
+end
+
+rule "rule052"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.52);
+end
+
+rule "rule053"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.53);
+end
+
+rule "rule054"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.54);
+end
+
+rule "rule055"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.55);
+end
+
+rule "rule056"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.56);
+end
+
+rule "rule057"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.57);
+end
+
+rule "rule058"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.58);
+end
+
+rule "rule059"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.59);
+end
+
+
+rule "rule060"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.60);
+end
+
+rule "rule061"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.61);
+end
+
+rule "rule062"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.62);
+end
+
+rule "rule063"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.63);
+end
+
+rule "rule064"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.64);
+end
+
+rule "rule065"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.65);
+end
+
+rule "rule066"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.66);
+end
+
+rule "rule067"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.67);
+end
+
+rule "rule068"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.68);
+end
+
+rule "rule069"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.69);
+end
+
+
+rule "rule070"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.70);
+end
+
+rule "rule071"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.71);
+end
+
+rule "rule072"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.72);
+end
+
+rule "rule073"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.73);
+end
+
+rule "rule074"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.74);
+end
+
+rule "rule075"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.75);
+end
+
+rule "rule076"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.76);
+end
+
+rule "rule077"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.77);
+end
+
+rule "rule078"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.78);
+end
+
+rule "rule079"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.79);
+end
+
+
+rule "rule080"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.80);
+end
+
+
+rule "rule081"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.81);
+end
+
+rule "rule082"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.82);
+end
+
+rule "rule083"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.83);
+end
+
+rule "rule084"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.84);
+end
+
+rule "rule085"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.85);
+end
+
+rule "rule086"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.86);
+end
+
+rule "rule087"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.87);
+end
+
+rule "rule088"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.88);
+end
+
+rule "rule089"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.89);
+end
+
+
+rule "rule090"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.90);
+end
+
+rule "rule091"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.91);
+end
+
+rule "rule092"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.92);
+end
+
+rule "rule093"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.93);
+end
+
+rule "rule094"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.94);
+end
+
+rule "rule095"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.95);
+end
+
+rule "rule096"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.96);
+end
+
+rule "rule097"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.97);
+end
+
+rule "rule098"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.98);
+end
+
+rule "rule099"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.99);
+end
+
+
+rule "rule100"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule101"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.01);
+end
+
+rule "rule102"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.02);
+end
+
+rule "rule103"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.03);
+end
+
+rule "rule104"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.04);
+end
+
+rule "rule105"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.05);
+end
+
+rule "rule106"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.06);
+end
+
+rule "rule107"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.07);
+end
+
+rule "rule108"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.08);
+end
+
+rule "rule109"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.09);
+end
+
+
+rule "rule110"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.10);
+end
+
+rule "rule111"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.11);
+end
+
+rule "rule112"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.12);
+end
+
+rule "rule113"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.13);
+end
+
+rule "rule114"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.14);
+end
+
+rule "rule115"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.15);
+end
+
+rule "rule116"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.16);
+end
+
+rule "rule117"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.17);
+end
+
+rule "rule118"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.18);
+end
+
+rule "rule119"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.19);
+end
+
+
+rule "rule120"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule121"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.21);
+end
+
+rule "rule122"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.22);
+end
+
+rule "rule123"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.23);
+end
+
+rule "rule124"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*02.4);
+end
+
+rule "rule125"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.25);
+end
+
+rule "rule126"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.26);
+end
+
+rule "rule127"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.27);
+end
+
+rule "rule128"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.28);
+end
+
+rule "rule129"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.29);
+end
+
+
+rule "rule130"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.30);
+end
+
+rule "rule131"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.31);
+end
+
+rule "rule132"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.32);
+end
+
+rule "rule133"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.33);
+end
+
+rule "rule134"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.34);
+end
+
+rule "rule135"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.35);
+end
+
+rule "rule136"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.36);
+end
+
+rule "rule137"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.37);
+end
+
+rule "rule138"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.38);
+end
+
+rule "rule139"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.39);
+end
+
+
+rule "rule140"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.40);
+end
+
+
+rule "rule141"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.41);
+end
+
+rule "rule142"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.42);
+end
+
+rule "rule143"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.43);
+end
+
+rule "rule144"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.44);
+end
+
+rule "rule145"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.45);
+end
+
+rule "rule146"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.46);
+end
+
+rule "rule147"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.47);
+end
+
+rule "rule148"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.48);
+end
+
+rule "rule149"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.49);
+end
+
+
+rule "rule150"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.50);
+end
+
+rule "rule151"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.51);
+end
+
+rule "rule152"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.52);
+end
+
+rule "rule153"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.53);
+end
+
+rule "rule154"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.54);
+end
+
+rule "rule155"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.55);
+end
+
+rule "rule156"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.56);
+end
+
+rule "rule157"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.57);
+end
+
+rule "rule158"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.58);
+end
+
+rule "rule159"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.59);
+end
+
+
+rule "rule160"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.60);
+end
+
+rule "rule161"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.61);
+end
+
+rule "rule162"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.62);
+end
+
+rule "rule163"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.63);
+end
+
+rule "rule164"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.64);
+end
+
+rule "rule165"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.65);
+end
+
+rule "rule166"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.66);
+end
+
+rule "rule167"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.67);
+end
+
+rule "rule168"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.68);
+end
+
+rule "rule169"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.69);
+end
+
+
+rule "rule170"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.70);
+end
+
+rule "rule171"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.71);
+end
+
+rule "rule172"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.72);
+end
+
+rule "rule173"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.73);
+end
+
+rule "rule174"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.74);
+end
+
+rule "rule175"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.75);
+end
+
+rule "rule176"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.76);
+end
+
+rule "rule177"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.77);
+end
+
+rule "rule178"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.78);
+end
+
+rule "rule179"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.79);
+end
+
+
+rule "rule180"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.80);
+end
+
+
+rule "rule181"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.81);
+end
+
+rule "rule182"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.82);
+end
+
+rule "rule183"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.83);
+end
+
+rule "rule184"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.84);
+end
+
+rule "rule185"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.85);
+end
+
+rule "rule186"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.86);
+end
+
+rule "rule187"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.87);
+end
+
+rule "rule188"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.88);
+end
+
+rule "rule189"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.89);
+end
+
+
+rule "rule190"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.90);
+end
+
+rule "rule191"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.91);
+end
+
+rule "rule192"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.92);
+end
+
+rule "rule193"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.93);
+end
+
+rule "rule194"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.94);
+end
+
+rule "rule195"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.95);
+end
+
+rule "rule196"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.96);
+end
+
+rule "rule197"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.97);
+end
+
+rule "rule198"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.98);
+end
+
+rule "rule199"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.99);
+end
+
+
+rule "rule200"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+
+rule "rule201"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.01);
+end
+
+rule "rule202"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.02);
+end
+
+rule "rule203"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.03);
+end
+
+rule "rule204"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.04);
+end
+
+rule "rule205"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.05);
+end
+
+rule "rule206"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.06);
+end
+
+rule "rule207"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.07);
+end
+
+rule "rule208"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.08);
+end
+
+rule "rule209"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.09);
+end
+
+
+rule "rule210"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.10);
+end
+
+rule "rule211"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.11);
+end
+
+rule "rule212"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.12);
+end
+
+rule "rule213"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.13);
+end
+
+rule "rule214"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.14);
+end
+
+rule "rule215"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.15);
+end
+
+rule "rule216"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.16);
+end
+
+rule "rule217"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.17);
+end
+
+rule "rule218"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.18);
+end
+
+rule "rule219"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.19);
+end
+
+
+rule "rule220"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule221"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.21);
+end
+
+rule "rule222"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.22);
+end
+
+rule "rule223"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.23);
+end
+
+rule "rule224"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*02.4);
+end
+
+rule "rule225"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.25);
+end
+
+rule "rule226"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.26);
+end
+
+rule "rule227"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.27);
+end
+
+rule "rule228"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.28);
+end
+
+rule "rule229"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.29);
+end
+
+
+rule "rule230"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.30);
+end
+
+rule "rule231"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.31);
+end
+
+rule "rule232"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.32);
+end
+
+rule "rule233"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.33);
+end
+
+rule "rule234"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.34);
+end
+
+rule "rule235"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.35);
+end
+
+rule "rule236"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.36);
+end
+
+rule "rule237"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.37);
+end
+
+rule "rule238"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.38);
+end
+
+rule "rule239"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.39);
+end
+
+
+rule "rule240"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.40);
+end
+
+
+rule "rule241"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.41);
+end
+
+rule "rule242"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.42);
+end
+
+rule "rule243"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.43);
+end
+
+rule "rule244"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.44);
+end
+
+rule "rule245"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.45);
+end
+
+rule "rule246"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.46);
+end
+
+rule "rule247"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.47);
+end
+
+rule "rule248"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.48);
+end
+
+rule "rule249"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.49);
+end
+
+
+rule "rule250"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.50);
+end
+
+rule "rule251"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.51);
+end
+
+rule "rule252"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.52);
+end
+
+rule "rule253"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.53);
+end
+
+rule "rule254"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.54);
+end
+
+rule "rule255"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.55);
+end
+
+rule "rule256"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.56);
+end
+
+rule "rule257"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.57);
+end
+
+rule "rule258"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.58);
+end
+
+rule "rule259"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.59);
+end
+
+
+rule "rule260"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.60);
+end
+
+rule "rule261"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.61);
+end
+
+rule "rule262"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.62);
+end
+
+rule "rule263"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.63);
+end
+
+rule "rule264"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.64);
+end
+
+rule "rule265"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.65);
+end
+
+rule "rule266"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.66);
+end
+
+rule "rule267"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.67);
+end
+
+rule "rule268"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.68);
+end
+
+rule "rule269"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.69);
+end
+
+
+rule "rule270"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.70);
+end
+
+rule "rule271"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.71);
+end
+
+rule "rule272"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.72);
+end
+
+rule "rule273"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.73);
+end
+
+rule "rule274"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.74);
+end
+
+rule "rule275"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.75);
+end
+
+rule "rule276"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.76);
+end
+
+rule "rule277"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.77);
+end
+
+rule "rule278"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.78);
+end
+
+rule "rule279"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.79);
+end
+
+
+rule "rule280"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.80);
+end
+
+
+rule "rule281"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.81);
+end
+
+rule "rule282"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.82);
+end
+
+rule "rule283"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.83);
+end
+
+rule "rule284"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.84);
+end
+
+rule "rule285"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.85);
+end
+
+rule "rule286"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.86);
+end
+
+rule "rule287"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.87);
+end
+
+rule "rule288"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.88);
+end
+
+rule "rule289"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.89);
+end
+
+
+rule "rule290"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.90);
+end
+
+rule "rule291"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.91);
+end
+
+rule "rule292"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.92);
+end
+
+rule "rule293"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.93);
+end
+
+rule "rule294"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.94);
+end
+
+rule "rule295"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.95);
+end
+
+rule "rule296"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.96);
+end
+
+rule "rule297"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.97);
+end
+
+rule "rule298"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.98);
+end
+
+rule "rule299"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.99);
+end
+
+
+rule "rule300"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rul1001"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.01);
+end
+
+rule "rule302"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.02);
+end
+
+rule "rule303"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.03);
+end
+
+rule "rule304"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.04);
+end
+
+rule "rule305"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.05);
+end
+
+rule "rule306"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.06);
+end
+
+rule "rule307"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.07);
+end
+
+rule "rule308"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.08);
+end
+
+rule "rule309"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.09);
+end
+
+
+rule "rule310"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.10);
+end
+
+rule "rule311"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.11);
+end
+
+rule "rule312"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.12);
+end
+
+rule "rule313"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.13);
+end
+
+rule "rule314"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.14);
+end
+
+rule "rule315"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.15);
+end
+
+rule "rule316"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.16);
+end
+
+rule "rule317"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.17);
+end
+
+rule "rule318"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.18);
+end
+
+rule "rule319"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.19);
+end
+
+
+rule "rule320"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule321"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.21);
+end
+
+rule "rule322"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.22);
+end
+
+rule "rule323"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.23);
+end
+
+rule "rule324"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*02.4);
+end
+
+rule "rule325"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.25);
+end
+
+rule "rule326"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.26);
+end
+
+rule "rule327"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.27);
+end
+
+rule "rule328"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.28);
+end
+
+rule "rule329"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.29);
+end
+
+
+rule "rule330"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.30);
+end
+
+rule "rule331"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.31);
+end
+
+rule "rule332"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.32);
+end
+
+rule "rule333"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.33);
+end
+
+rule "rule334"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.34);
+end
+
+rule "rule335"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.35);
+end
+
+rule "rule336"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.36);
+end
+
+rule "rule337"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.37);
+end
+
+rule "rule338"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.38);
+end
+
+rule "rule339"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.39);
+end
+
+
+rule "rule340"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.40);
+end
+
+
+rule "rule341"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.41);
+end
+
+rule "rule342"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.42);
+end
+
+rule "rule343"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.43);
+end
+
+rule "rule344"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.44);
+end
+
+rule "rule345"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.45);
+end
+
+rule "rule346"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.46);
+end
+
+rule "rule347"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.47);
+end
+
+rule "rule348"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.48);
+end
+
+rule "rule349"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.49);
+end
+
+
+rule "rule350"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.50);
+end
+
+rule "rule351"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.51);
+end
+
+rule "rule352"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.52);
+end
+
+rule "rule353"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.53);
+end
+
+rule "rule354"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.54);
+end
+
+rule "rule355"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.55);
+end
+
+rule "rule356"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.56);
+end
+
+rule "rule357"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.57);
+end
+
+rule "rule358"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.58);
+end
+
+rule "rule359"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.59);
+end
+
+
+rule "rule360"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.60);
+end
+
+rule "rule361"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.61);
+end
+
+rule "rule362"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.62);
+end
+
+rule "rule363"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.63);
+end
+
+rule "rule364"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.64);
+end
+
+rule "rule365"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.65);
+end
+
+rule "rule366"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.66);
+end
+
+rule "rule367"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.67);
+end
+
+rule "rule368"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.68);
+end
+
+rule "rule369"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.69);
+end
+
+
+rule "rule370"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.70);
+end
+
+rule "rule371"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.71);
+end
+
+rule "rule372"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.72);
+end
+
+rule "rule373"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.73);
+end
+
+rule "rule374"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.74);
+end
+
+rule "rule375"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.75);
+end
+
+rule "rule376"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.76);
+end
+
+rule "rule377"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.77);
+end
+
+rule "rule378"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.78);
+end
+
+rule "rule379"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.79);
+end
+
+
+rule "rule380"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.80);
+end
+
+
+rule "rule381"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.81);
+end
+
+rule "rule382"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.82);
+end
+
+rule "rule383"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.83);
+end
+
+rule "rule384"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.84);
+end
+
+rule "rule385"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.85);
+end
+
+rule "rule386"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.86);
+end
+
+rule "rule387"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.87);
+end
+
+rule "rule388"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.88);
+end
+
+rule "rule389"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.89);
+end
+
+
+rule "rule390"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.90);
+end
+
+rule "rule391"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.91);
+end
+
+rule "rule392"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.92);
+end
+
+rule "rule393"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.93);
+end
+
+rule "rule394"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.94);
+end
+
+rule "rule395"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.95);
+end
+
+rule "rule396"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.96);
+end
+
+rule "rule397"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.97);
+end
+
+rule "rule398"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.98);
+end
+
+rule "rule399"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.99);
+end
+
+
+rule "rule400"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+
+rule "rule401"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.01);
+end
+
+rule "rule402"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.02);
+end
+
+rule "rule403"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.03);
+end
+
+rule "rule404"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.04);
+end
+
+rule "rule405"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.05);
+end
+
+rule "rule406"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.06);
+end
+
+rule "rule407"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.07);
+end
+
+rule "rule408"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.08);
+end
+
+rule "rule409"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.09);
+end
+
+
+rule "rule410"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.10);
+end
+
+rule "rule411"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.11);
+end
+
+rule "rule412"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.12);
+end
+
+rule "rule413"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.13);
+end
+
+rule "rule414"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.14);
+end
+
+rule "rule415"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.15);
+end
+
+rule "rule416"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.16);
+end
+
+rule "rule417"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.17);
+end
+
+rule "rule418"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.18);
+end
+
+rule "rule419"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.19);
+end
+
+
+rule "rule420"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule421"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.21);
+end
+
+rule "rule422"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.22);
+end
+
+rule "rule423"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.23);
+end
+
+rule "rule424"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*02.4);
+end
+
+rule "rule425"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.25);
+end
+
+rule "rule426"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.26);
+end
+
+rule "rule427"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.27);
+end
+
+rule "rule428"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.28);
+end
+
+rule "rule429"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.29);
+end
+
+
+rule "rule430"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.30);
+end
+
+rule "rule431"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.31);
+end
+
+rule "rule432"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.32);
+end
+
+rule "rule433"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.33);
+end
+
+rule "rule434"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.34);
+end
+
+rule "rule435"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.35);
+end
+
+rule "rule436"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.36);
+end
+
+rule "rule437"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.37);
+end
+
+rule "rule438"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.38);
+end
+
+rule "rule439"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.39);
+end
+
+
+rule "rule440"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.40);
+end
+
+
+rule "rule441"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.41);
+end
+
+rule "rule442"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.42);
+end
+
+rule "rule443"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.43);
+end
+
+rule "rule444"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.44);
+end
+
+rule "rule445"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.45);
+end
+
+rule "rule446"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.46);
+end
+
+rule "rule447"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.47);
+end
+
+rule "rule448"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.48);
+end
+
+rule "rule449"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.49);
+end
+
+
+rule "rule450"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.50);
+end
+
+rule "rule451"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.51);
+end
+
+rule "rule452"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.52);
+end
+
+rule "rule453"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.53);
+end
+
+rule "rule454"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.54);
+end
+
+rule "rule455"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.55);
+end
+
+rule "rule456"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.56);
+end
+
+rule "rule457"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.57);
+end
+
+rule "rule458"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.58);
+end
+
+rule "rule459"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.59);
+end
+
+
+rule "rule460"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.60);
+end
+
+rule "rule461"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.61);
+end
+
+rule "rule462"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.62);
+end
+
+rule "rule463"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.63);
+end
+
+rule "rule464"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.64);
+end
+
+rule "rule465"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.65);
+end
+
+rule "rule466"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.66);
+end
+
+rule "rule467"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.67);
+end
+
+rule "rule468"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.68);
+end
+
+rule "rule469"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.69);
+end
+
+
+rule "rule470"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.70);
+end
+
+rule "rule471"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.71);
+end
+
+rule "rule472"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.72);
+end
+
+rule "rule473"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.73);
+end
+
+rule "rule474"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.74);
+end
+
+rule "rule475"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.75);
+end
+
+rule "rule476"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.76);
+end
+
+rule "rule477"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.77);
+end
+
+rule "rule478"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.78);
+end
+
+rule "rule479"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.79);
+end
+
+
+rule "rule480"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.80);
+end
+
+
+rule "rule481"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.81);
+end
+
+rule "rule482"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.82);
+end
+
+rule "rule483"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.83);
+end
+
+rule "rule484"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.84);
+end
+
+rule "rule485"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.85);
+end
+
+rule "rule486"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.86);
+end
+
+rule "rule487"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.87);
+end
+
+rule "rule488"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.88);
+end
+
+rule "rule489"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.89);
+end
+
+
+rule "rule490"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.90);
+end
+
+rule "rule491"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.91);
+end
+
+rule "rule492"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.92);
+end
+
+rule "rule493"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.93);
+end
+
+rule "rule494"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.94);
+end
+
+rule "rule495"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.95);
+end
+
+rule "rule496"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.96);
+end
+
+rule "rule497"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.97);
+end
+
+rule "rule498"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.98);
+end
+
+rule "rule499"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.99);
+end
+
+
+rule "rule500"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule501"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.01);
+end
+
+rule "rule502"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.02);
+end
+
+rule "rule503"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.03);
+end
+
+rule "rule504"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.04);
+end
+
+rule "rule505"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.05);
+end
+
+rule "rule506"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.06);
+end
+
+rule "rule507"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.07);
+end
+
+rule "rule508"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.08);
+end
+
+rule "rule509"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.09);
+end
+
+
+rule "rule510"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.10);
+end
+
+rule "rule511"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.11);
+end
+
+rule "rule512"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.12);
+end
+
+rule "rule513"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.13);
+end
+
+rule "rule514"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.14);
+end
+
+rule "rule515"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.15);
+end
+
+rule "rule516"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.16);
+end
+
+rule "rule517"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.17);
+end
+
+rule "rule518"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.18);
+end
+
+rule "rule519"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.19);
+end
+
+
+rule "rule520"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule521"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.21);
+end
+
+rule "rule522"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.22);
+end
+
+rule "rule523"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.23);
+end
+
+rule "rule524"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*02.4);
+end
+
+rule "rule525"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.25);
+end
+
+rule "rule526"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.26);
+end
+
+rule "rule527"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.27);
+end
+
+rule "rule528"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.28);
+end
+
+rule "rule529"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.29);
+end
+
+
+rule "rule530"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.30);
+end
+
+rule "rule531"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.31);
+end
+
+rule "rule532"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.32);
+end
+
+rule "rule533"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.33);
+end
+
+rule "rule534"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.34);
+end
+
+rule "rule535"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.35);
+end
+
+rule "rule536"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.36);
+end
+
+rule "rule537"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.37);
+end
+
+rule "rule538"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.38);
+end
+
+rule "rule539"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.39);
+end
+
+
+rule "rule540"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.40);
+end
+
+
+rule "rule541"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.41);
+end
+
+rule "rule542"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.42);
+end
+
+rule "rule543"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.43);
+end
+
+rule "rule544"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.44);
+end
+
+rule "rule545"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.45);
+end
+
+rule "rule546"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.46);
+end
+
+rule "rule547"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.47);
+end
+
+rule "rule548"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.48);
+end
+
+rule "rule549"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.49);
+end
+
+
+rule "rule550"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.50);
+end
+
+rule "rule551"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.51);
+end
+
+rule "rule552"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.52);
+end
+
+rule "rule553"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.53);
+end
+
+rule "rule554"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.54);
+end
+
+rule "rule555"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.55);
+end
+
+rule "rule556"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.56);
+end
+
+rule "rule557"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.57);
+end
+
+rule "rule558"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.58);
+end
+
+rule "rule559"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.59);
+end
+
+
+rule "rule560"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.60);
+end
+
+rule "rule561"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.61);
+end
+
+rule "rule562"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.62);
+end
+
+rule "rule563"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.63);
+end
+
+rule "rule564"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.64);
+end
+
+rule "rule565"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.65);
+end
+
+rule "rule566"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.66);
+end
+
+rule "rule567"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.67);
+end
+
+rule "rule568"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.68);
+end
+
+rule "rule569"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.69);
+end
+
+
+rule "rule570"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.70);
+end
+
+rule "rule571"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.71);
+end
+
+rule "rule572"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.72);
+end
+
+rule "rule573"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.73);
+end
+
+rule "rule574"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.74);
+end
+
+rule "rule575"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.75);
+end
+
+rule "rule576"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.76);
+end
+
+rule "rule577"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.77);
+end
+
+rule "rule578"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.78);
+end
+
+rule "rule579"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.79);
+end
+
+
+rule "rule580"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.80);
+end
+
+
+rule "rule581"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.81);
+end
+
+rule "rule582"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.82);
+end
+
+rule "rule583"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.83);
+end
+
+rule "rule584"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.84);
+end
+
+rule "rule585"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.85);
+end
+
+rule "rule586"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.86);
+end
+
+rule "rule587"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.87);
+end
+
+rule "rule588"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.88);
+end
+
+rule "rule589"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.89);
+end
+
+
+rule "rule590"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.90);
+end
+
+rule "rule591"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.91);
+end
+
+rule "rule592"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.92);
+end
+
+rule "rule593"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.93);
+end
+
+rule "rule594"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.94);
+end
+
+rule "rule595"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.95);
+end
+
+rule "rule596"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.96);
+end
+
+rule "rule597"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.97);
+end
+
+rule "rule598"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.98);
+end
+
+rule "rule599"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.99);
+end
+
+
+rule "rule600"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule6001"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.01);
+end
+
+rule "rule602"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.02);
+end
+
+rule "rule603"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.03);
+end
+
+rule "rule604"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.04);
+end
+
+rule "rule605"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.05);
+end
+
+rule "rule606"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.06);
+end
+
+rule "rule607"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.07);
+end
+
+rule "rule608"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.08);
+end
+
+rule "rule609"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.09);
+end
+
+
+rule "rule610"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.10);
+end
+
+rule "rule611"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.11);
+end
+
+rule "rule612"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.12);
+end
+
+rule "rule613"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.13);
+end
+
+rule "rule614"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.14);
+end
+
+rule "rule615"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.15);
+end
+
+rule "rule616"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.16);
+end
+
+rule "rule617"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.17);
+end
+
+rule "rule618"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.18);
+end
+
+rule "rule619"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.19);
+end
+
+
+rule "rule620"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule621"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.21);
+end
+
+rule "rule622"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.22);
+end
+
+rule "rule623"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.23);
+end
+
+rule "rule624"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*02.4);
+end
+
+rule "rule625"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.25);
+end
+
+rule "rule626"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.26);
+end
+
+rule "rule627"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.27);
+end
+
+rule "rule628"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.28);
+end
+
+rule "rule629"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.29);
+end
+
+
+rule "rule630"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.30);
+end
+
+rule "rule631"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.31);
+end
+
+rule "rule632"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.32);
+end
+
+rule "rule633"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.33);
+end
+
+rule "rule634"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.34);
+end
+
+rule "rule635"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.35);
+end
+
+rule "rule636"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.36);
+end
+
+rule "rule637"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.37);
+end
+
+rule "rule638"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.38);
+end
+
+rule "rule639"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.39);
+end
+
+
+rule "rule640"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.40);
+end
+
+
+rule "rule641"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.41);
+end
+
+rule "rule642"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.42);
+end
+
+rule "rule643"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.43);
+end
+
+rule "rule644"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.44);
+end
+
+rule "rule645"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.45);
+end
+
+rule "rule646"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.46);
+end
+
+rule "rule647"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.47);
+end
+
+rule "rule648"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.48);
+end
+
+rule "rule649"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.49);
+end
+
+
+rule "rule650"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.50);
+end
+
+rule "rule651"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.51);
+end
+
+rule "rule652"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.52);
+end
+
+rule "rule653"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.53);
+end
+
+rule "rule654"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.54);
+end
+
+rule "rule655"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.55);
+end
+
+rule "rule656"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.56);
+end
+
+rule "rule657"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.57);
+end
+
+rule "rule658"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.58);
+end
+
+rule "rule659"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.59);
+end
+
+
+rule "rule660"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.60);
+end
+
+rule "rule661"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.61);
+end
+
+rule "rule662"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.62);
+end
+
+rule "rule663"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.63);
+end
+
+rule "rule664"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.64);
+end
+
+rule "rule665"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.65);
+end
+
+rule "rule666"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.66);
+end
+
+rule "rule667"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.67);
+end
+
+rule "rule668"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.68);
+end
+
+rule "rule669"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.69);
+end
+
+
+rule "rule670"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.70);
+end
+
+rule "rule671"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.71);
+end
+
+rule "rule672"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.72);
+end
+
+rule "rule673"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.73);
+end
+
+rule "rule674"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.74);
+end
+
+rule "rule675"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.75);
+end
+
+rule "rule676"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.76);
+end
+
+rule "rule677"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.77);
+end
+
+rule "rule678"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.78);
+end
+
+rule "rule679"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.79);
+end
+
+
+rule "rule680"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.80);
+end
+
+
+rule "rule681"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.81);
+end
+
+rule "rule682"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.82);
+end
+
+rule "rule683"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.83);
+end
+
+rule "rule684"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.84);
+end
+
+rule "rule685"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.85);
+end
+
+rule "rule686"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.86);
+end
+
+rule "rule687"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.87);
+end
+
+rule "rule688"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.88);
+end
+
+rule "rule689"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.89);
+end
+
+
+rule "rule690"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.90);
+end
+
+rule "rule691"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.91);
+end
+
+rule "rule692"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.92);
+end
+
+rule "rule693"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.93);
+end
+
+rule "rule694"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.94);
+end
+
+rule "rule695"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.95);
+end
+
+rule "rule696"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.96);
+end
+
+rule "rule697"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.97);
+end
+
+rule "rule698"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.98);
+end
+
+rule "rule699"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.99);
+end
+
+
+rule "rule700"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+
+rule "rule701"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.01);
+end
+
+rule "rule702"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.02);
+end
+
+rule "rule703"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.03);
+end
+
+rule "rule704"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.04);
+end
+
+rule "rule705"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.05);
+end
+
+rule "rule706"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.06);
+end
+
+rule "rule707"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.07);
+end
+
+rule "rule708"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.08);
+end
+
+rule "rule709"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.09);
+end
+
+
+rule "rule710"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.10);
+end
+
+rule "rule711"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.11);
+end
+
+rule "rule712"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.12);
+end
+
+rule "rule713"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.13);
+end
+
+rule "rule714"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.14);
+end
+
+rule "rule715"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.15);
+end
+
+rule "rule716"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.16);
+end
+
+rule "rule717"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.17);
+end
+
+rule "rule718"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.18);
+end
+
+rule "rule719"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.19);
+end
+
+
+rule "rule720"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule721"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.21);
+end
+
+rule "rule722"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.22);
+end
+
+rule "rule723"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.23);
+end
+
+rule "rule724"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*02.4);
+end
+
+rule "rule725"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.25);
+end
+
+rule "rule726"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.26);
+end
+
+rule "rule727"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.27);
+end
+
+rule "rule728"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.28);
+end
+
+rule "rule729"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.29);
+end
+
+
+rule "rule730"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.30);
+end
+
+rule "rule731"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.31);
+end
+
+rule "rule732"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.32);
+end
+
+rule "rule733"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.33);
+end
+
+rule "rule734"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.34);
+end
+
+rule "rule735"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.35);
+end
+
+rule "rule736"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.36);
+end
+
+rule "rule737"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.37);
+end
+
+rule "rule738"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.38);
+end
+
+rule "rule739"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.39);
+end
+
+
+rule "rule740"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.40);
+end
+
+
+rule "rule741"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.41);
+end
+
+rule "rule742"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.42);
+end
+
+rule "rule743"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.43);
+end
+
+rule "rule744"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.44);
+end
+
+rule "rule745"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.45);
+end
+
+rule "rule746"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.46);
+end
+
+rule "rule747"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.47);
+end
+
+rule "rule748"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.48);
+end
+
+rule "rule749"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.49);
+end
+
+
+rule "rule750"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.50);
+end
+
+rule "rule751"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.51);
+end
+
+rule "rule752"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.52);
+end
+
+rule "rule753"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.53);
+end
+
+rule "rule754"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.54);
+end
+
+rule "rule755"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.55);
+end
+
+rule "rule756"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.56);
+end
+
+rule "rule757"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.57);
+end
+
+rule "rule758"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.58);
+end
+
+rule "rule759"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.59);
+end
+
+
+rule "rule760"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.60);
+end
+
+rule "rule761"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.61);
+end
+
+rule "rule762"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.62);
+end
+
+rule "rule763"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.63);
+end
+
+rule "rule764"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.64);
+end
+
+rule "rule765"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.65);
+end
+
+rule "rule766"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.66);
+end
+
+rule "rule767"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.67);
+end
+
+rule "rule768"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.68);
+end
+
+rule "rule769"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.69);
+end
+
+
+rule "rule770"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.70);
+end
+
+rule "rule771"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.71);
+end
+
+rule "rule772"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.72);
+end
+
+rule "rule773"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.73);
+end
+
+rule "rule774"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.74);
+end
+
+rule "rule775"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.75);
+end
+
+rule "rule776"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.76);
+end
+
+rule "rule777"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.77);
+end
+
+rule "rule778"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.78);
+end
+
+rule "rule779"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.79);
+end
+
+
+rule "rule780"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.80);
+end
+
+
+rule "rule781"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.81);
+end
+
+rule "rule782"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.82);
+end
+
+rule "rule783"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.83);
+end
+
+rule "rule784"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.84);
+end
+
+rule "rule785"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.85);
+end
+
+rule "rule786"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.86);
+end
+
+rule "rule787"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.87);
+end
+
+rule "rule788"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.88);
+end
+
+rule "rule789"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.89);
+end
+
+
+rule "rule790"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.90);
+end
+
+rule "rule791"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.91);
+end
+
+rule "rule792"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.92);
+end
+
+rule "rule793"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.93);
+end
+
+rule "rule794"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.94);
+end
+
+rule "rule795"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.95);
+end
+
+rule "rule796"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.96);
+end
+
+rule "rule797"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.97);
+end
+
+rule "rule798"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.98);
+end
+
+rule "rule799"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.99);
+end
+
+
+rule "rule800"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rul801"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.01);
+end
+
+rule "rule802"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.02);
+end
+
+rule "rule803"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.03);
+end
+
+rule "rule804"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.04);
+end
+
+rule "rule805"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.05);
+end
+
+rule "rule806"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.06);
+end
+
+rule "rule807"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.07);
+end
+
+rule "rule808"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.08);
+end
+
+rule "rule809"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.09);
+end
+
+
+rule "rule810"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.10);
+end
+
+rule "rule811"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.11);
+end
+
+rule "rule812"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.12);
+end
+
+rule "rule813"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.13);
+end
+
+rule "rule814"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.14);
+end
+
+rule "rule815"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.15);
+end
+
+rule "rule816"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.16);
+end
+
+rule "rule817"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.17);
+end
+
+rule "rule818"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.18);
+end
+
+rule "rule819"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.19);
+end
+
+
+rule "rule820"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+end
+
+rule "rule821"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.21);
+end
+
+rule "rule822"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.22);
+end
+
+rule "rule823"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.23);
+end
+
+rule "rule824"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*02.4);
+end
+
+rule "rule825"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.25);
+end
+
+rule "rule826"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.26);
+end
+
+rule "rule827"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.27);
+end
+
+rule "rule828"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.28);
+end
+
+rule "rule829"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.29);
+end
+
+
+rule "rule830"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.30);
+end
+
+rule "rule831"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.31);
+end
+
+rule "rule832"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.32);
+end
+
+rule "rule833"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.33);
+end
+
+rule "rule834"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.34);
+end
+
+rule "rule835"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.35);
+end
+
+rule "rule836"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.36);
+end
+
+rule "rule837"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.37);
+end
+
+rule "rule838"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.38);
+end
+
+rule "rule839"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.39);
+end
+
+
+rule "rule840"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.40);
+end
+
+
+rule "rule841"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.41);
+end
+
+rule "rule842"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.42);
+end
+
+rule "rule843"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.43);
+end
+
+rule "rule844"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.44);
+end
+
+rule "rule845"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.45);
+end
+
+rule "rule846"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.46);
+end
+
+rule "rule847"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.47);
+end
+
+rule "rule848"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.48);
+end
+
+rule "rule849"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.49);
+end
+
+
+rule "rule850"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.50);
+end
+
+rule "rule851"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.51);
+end
+
+rule "rule852"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.52);
+end
+
+rule "rule853"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.53);
+end
+
+rule "rule854"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.54);
+end
+
+rule "rule855"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.55);
+end
+
+rule "rule856"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.56);
+end
+
+rule "rule857"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.57);
+end
+
+rule "rule858"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.58);
+end
+
+rule "rule859"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.59);
+end
+
+
+rule "rule860"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.60);
+end
+
+rule "rule861"
+	when
+		$objetoRegla : Order(cardType == "U")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.61);
+end
+
+rule "rule862"
+	when
+		$objeto : Order(cardType == "V")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.62);
+end
+
+rule "rule863"
+	when
+		$objeto : Order(cardType == "W")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.63);
+end
+
+rule "rule864"
+	when
+		$objetoRegla : Order(cardType == "X")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.64);
+end
+
+rule "rule865"
+	when
+		$objeto : Order(cardType == "Y")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.65);
+end
+
+rule "rule866"
+	when
+		$objeto : Order(cardType == "Z")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.66);
+end
+
+rule "rule867"
+	when
+		$objetoRegla : Order(cardType == "AA")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.67);
+end
+
+rule "rule868"
+	when
+		$objeto : Order(cardType == "AB")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.68);
+end
+
+rule "rule869"
+	when
+		$objeto : Order(cardType == "AC")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.69);
+end
+
+
+rule "rule870"
+	when
+		$objeto : Order(cardType == "AD")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.70);
+end
+
+rule "rule871"
+	when
+		$objetoRegla : Order(cardType == "AE")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.71);
+end
+
+rule "rule872"
+	when
+		$objeto : Order(cardType == "AF")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.72);
+end
+
+rule "rule873"
+	when
+		$objeto : Order(cardType == "AG")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.73);
+end
+
+rule "rule874"
+	when
+		$objetoRegla : Order(cardType == "AH")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.74);
+end
+
+rule "rule875"
+	when
+		$objeto : Order(cardType == "AI")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.75);
+end
+
+rule "rule876"
+	when
+		$objeto : Order(cardType == "AJ")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.76);
+end
+
+rule "rule877"
+	when
+		$objetoRegla : Order(cardType == "AK")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.77);
+end
+
+rule "rule878"
+	when
+		$objeto : Order(cardType == "AL")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.78);
+end
+
+rule "rule879"
+	when
+		$objeto : Order(cardType == "AM")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.79);
+end
+
+
+rule "rule880"
+	when
+		$objeto : Order(cardType == "AN")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.80);
+end
+
+
+rule "rule881"
+	when
+		$objetoRegla : Order(cardType == "A")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.81);
+end
+
+rule "rule882"
+	when
+		$objeto : Order(cardType == "B")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.82);
+end
+
+rule "rule883"
+	when
+		$objeto : Order(cardType == "C")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.83);
+end
+
+rule "rule884"
+	when
+		$objetoRegla : Order(cardType == "D")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.84);
+end
+
+rule "rule885"
+	when
+		$objeto : Order(cardType == "E")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.85);
+end
+
+rule "rule886"
+	when
+		$objeto : Order(cardType == "F")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.86);
+end
+
+rule "rule887"
+	when
+		$objetoRegla : Order(cardType == "G")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.87);
+end
+
+rule "rule888"
+	when
+		$objeto : Order(cardType == "H")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.88);
+end
+
+rule "rule889"
+	when
+		$objeto : Order(cardType == "I")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.89);
+end
+
+
+rule "rule890"
+	when
+		$objeto : Order(cardType == "J")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.90);
+end
+
+rule "rule891"
+	when
+		$objetoRegla : Order(cardType == "K")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.91);
+end
+
+rule "rule892"
+	when
+		$objeto : Order(cardType == "L")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.92);
+end
+
+rule "rule893"
+	when
+		$objeto : Order(cardType == "M")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.93);
+end
+
+rule "rule894"
+	when
+		$objetoRegla : Order(cardType == "N")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.94);
+end
+
+rule "rule895"
+	when
+		$objeto : Order(cardType == "O")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.95);
+end
+
+rule "rule896"
+	when
+		$objeto : Order(cardType == "P")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.96);
+end
+
+rule "rule897"
+	when
+		$objetoRegla : Order(cardType == "Q")
+	then
+		$objetoRegla.setDiscount(10);
+		$objetoRegla.setMonto($objetoRegla.getPrice()-$objetoRegla.getPrice()*0.97);
+end
+
+rule "rule898"
+	when
+		$objeto : Order(cardType == "R")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.98);
+end
+
+rule "rule899"
+	when
+		$objeto : Order(cardType == "S")
+	then
+		$objeto.setDiscount(15);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.99);
+end
+
+
+rule "rule900"
+	when
+		$objeto : Order(cardType == "T")
+	then
+		$objeto.setDiscount(8);
+		$objeto.setMonto($objeto.getPrice()-$objeto.getPrice()*0.20);
+		$objeto.setDescripcion("Descripcion T");
+end
+	
+	
